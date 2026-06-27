@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+Path Finding Visualizer
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+Path Finding Visualizer
+</h1>
+
+
+
+<div class="controls">
+
+
+<button onclick="visualize()">
+BFS
+</button>
+
+
+<button onclick="dijkstra()">
+Dijkstra
+</button>
+
+
+<button onclick="astar()">
+A*
+</button>
+
+
+<button onclick="clearBoard()">
+Clear Board
+</button>
+
+
+</div>
+
+
+
+<label>
+Speed:
+</label>
+
+
+<input 
+type="range"
+min="50"
+max="1000"
+value="100"
+id="speed"
+/>
+
+
+
+
+<div id="grid"></div>
+
+
+
+
+<div class="legend">
+
+<p>🟩 Start</p>
+
+<p>🟥 End</p>
+
+<p>⬛ Wall</p>
+
+<p>🟨 Searching</p>
+
+<p>🟦 Path</p>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+
+</html>
